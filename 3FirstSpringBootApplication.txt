@@ -1,0 +1,98 @@
+Starting a Spring boot application
+1)Create a Maven Project,add in pom.xml and run it
+2)Spring Initializr(start.spring.io)
+3)Spring Boot CLI(Command Line Interface) using running Groovy script
+  Install
+	Download springBootCLi zip file
+	SDKMAN
+	Homebrew command
+	Macport installation
+  ./spring run app.groovy
+4)STS IDE
+	new>Spring Starter Project (Use start.spring.io)
+
+
+Create a Maven Project
+Skip archtype selection
+In pom.xml
+<parent>
+	<groupId>org.springframework.boot</>
+	<artifactId>spring-boot-starter-parent</>
+	<version></>
+<parent>
+<dependency>
+	<groupId>org.springframework.boot</>
+	<artifactId>spring-boot-starter-web</>	
+	//Here version will come according to parent tag
+</dependency>
+<properties>
+	<java.version>1.8</java.version>
+</properties>
+
+
+Starting Spring Boot application
+@SpringBootApplication
+SpringApplication.run(MyBootApp.class,args);
+localhost:8080
+
+
+Set up default configuration
+Starts Spring application Context
+Perform classpath scan
+Starts Tomcat server
+
+
+Bill of materials in spring boot
+	List of possible combination of jars with version that works well.
+
+	
+
+Why Embedded Tomcat Server?
+Convenience
+Servlet container config is now application config
+Standalone application
+	Easy to develop
+	Easy to run
+	Easy to deploy
+Useful for microservices architecture
+	Using single command we can run boot application
+
+
+
+
+Adding a controller
+A Java class
+Marked with annotation @RestController
+Has info about
+	What URL access trigger acces it?
+	What method to run when accessed?
+	@RequestMapping(value={"/hello"} method={RequestMethod.GET})//By default it handle only GET request
+
+
+Returning objects from controller
+List<Student> studentList=Arrays.asList(
+	new Student(),
+	new Student(),
+	new Student(),
+);
+Here studentList is a immutable list.
+
+
+Resource Student
+POST	/students 	Creates the new student
+GET 	/students 	Get all students
+GET 	/students/id 	Get the student of id
+PUT	/students/id 	Updates the student of id
+GET 	/students/id	Deletes the student of id
+
+
+@Autowired
+@PathVariable
+@RequestBody
+Postman
+
+
+
+
+
+Configuration

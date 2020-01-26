@@ -1,0 +1,38 @@
+JPA gives us ORM capability.
+
+Spring Data JPA
+	It let us working with JPA(or ORM tools) easier.
+
+Creating Spring Data JPA project
+	JPA dependency
+	Apache Derby dependency
+
+
+public interface StudentRepository extends CrudRepository<Student,String>
+{
+	
+}
+
+studentRepository.findAll().forEach(studentList:add);
+studentRepository.findOne(id);//getById
+studentRepository.save(student);//create new
+studentRepository.save(student);//update
+
+studentRepository.delete(id);
+
+
+
+
+Resource Student					Subject
+POST	/students 	Creates the new student		/students/{studentId}/subjects
+GET 	/students 	Get all students		/students/{studentId}/subjects
+GET 	/students/id 	Get the student of id		/students/{studentId}/subjects/{subjectId}
+PUT	/students/id 	Updates the student of id	/students/{studentId}/subjects/{subjectId}
+GET 	/students/id	Deletes the student of id	/students/{studentId}/subjects/{subjectId}
+
+
+
+public List<Subject> findByName(String name);
+@ManyToOne
+public List<Subject> findByStudentId(String studentId);
+

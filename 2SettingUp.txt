@@ -1,0 +1,14 @@
+
+Setting Up Development Environment
+echo $Java_Home
+spring.io
+Spring Tool Suite(STS) IDE
+
+
+Maven
+Build tool
+Dependency Management Tool
+Starter Project structure tool
+
+
+

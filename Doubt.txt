@@ -1,0 +1,13 @@
+Can we use ModelAndView in spring boot? I think Yes.
+diff b/w URI vs URL
+Student student=studentList.stream().filter(st->st.getId().equals(id)).findFirst().get();
+studentList.removeIf(st->st.getId().equals(id));
+
+Jax-RS: Jersey
+
+How to know running applition on particular port
+
+
+Can we use Spring Data JPA without Spring boot?
+
+@Component & @Repository both on same class

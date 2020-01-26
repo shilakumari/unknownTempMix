@@ -1,0 +1,30 @@
+Spring Framework
+It is a enterprise Java Framework.
+
+What spring famework/template provides?
+DI
+Application framework
+	Most of the enterprise applications having similarity in underlying concept/foundation like:
+		Business Service
+		Trasaction Management  
+Programming & Configuration Model
+Infrastructure Support
+
+Promblems with Spring:
+Huge Framework
+Multiple setup steps
+Multiple Configuration steps
+Multiple build & deploy steps
+There is no guideline/pathway/opinionated for building spring application for majority(>60%) of the use cases 
+Can we abstract these above steps?
+
+Spring Booot
+It is a way in which we can bootstrap or quickly startup a simple spring application.
+	
+Spring Boot makes it easy to create standalone production-grade Spring based applications that you can just run.
+
+Feature of Spring Boot
+Opinionated
+Convention over configuration 
+Standalone(no need of tomcat)
+Production ready

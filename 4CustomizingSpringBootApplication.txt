@@ -1,0 +1,4 @@
+Customizing Spring Boot Application using application.properties
+server.port=8010
+
+Google Spring Boot Common application properties
