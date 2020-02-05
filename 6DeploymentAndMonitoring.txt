@@ -1,5 +1,6 @@
 Deployment 
 cd projectName
+mvn install
 mvn clean install  //it create jar files in target folder
 java jar target/jarName.jar
 
@@ -9,6 +10,7 @@ This war can be deployed in a separate tomcat server
 
 Monitoring
 Add Ops>Actuator dependency
+localhost:8080/actuator
 localhost:8080/health
 localhost:1234/health(managment.server=1234 in properties file)
 Building a RESTful web service with Spring Boot Actuator on spring.io
